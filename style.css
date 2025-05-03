@@ -1,0 +1,107 @@
+html {
+    width: 98vw;
+}
+
+/* Paleta de cores do casamento
+1. #938196 – Roxo acinzentado
+2. #839681 – Verde sálvia escuro
+3. #9988AC – Lavanda médio
+4. #ABB7A0 – Verde oliva claro
+5. #C2B5B8 – Cinza rosado claro
+6. #C6B89A – Dourado fosco claro
+7. #EDD3C8 – Pêssego claríssimo
+8. #C2A397 – Rosé queimado
+9. #F1F5F3 – Cinza esverdeado
+*/
+
+
+body {
+    background: linear-gradient(90deg, #76b797, #ABB7A0, transparent 25% 75%, #71b493);
+    width: 100%;
+}
+
+body::before {
+    background: url(./background-topo.png);
+}
+
+body::after {
+    background: url(./folhas.png) no-repeat;
+}
+
+.h1,
+.h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.h1 {
+    font-size: 6rem !important;
+}
+
+.h2 {
+    font-size: 4.5rem !important;
+}
+
+.countdown {
+    padding-top: 5vh;
+    text-shadow: 3px 3px rgb(241, 213, 177);
+}
+
+.topo {
+    background-color: aliceblue;
+    font-size: 1.25rem;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.topo-item {
+    float: right;
+    margin: auto;
+    font-size: 1.25rem;
+    vertical-align: center;
+    line-height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.topo-item:hover {
+    transition-duration: 15ms;
+    cursor: pointer;
+    color: white;
+    background-color: #cac1fe;
+}
+
+.nav-item {
+    margin-left: auto;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

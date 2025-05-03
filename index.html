@@ -1,10 +1,81 @@
 <html>
-    <head>
-        <title>🥰 Karen e Victor 🥰</title>
-    </head>
 
-    <body>
-        <h1>Juntos desde 30/10/2024</h1>
-        <h2>Noivos desde 30/03/2025</h>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <title>🥰 Karen e Victor 🥰</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topo courier-prime-bold ">
+        <div class="row">
+            <div class="nav-icon"><img src="./favicon.ico" style="padding-left: 30px; width: 100px;"></div>
+            <div class="topo-item">Lista de Presentes</div>
+            <div class="topo-item">O casal</div>
+            <div class="topo-item">Padrinhos</div>
+            <div class="topo-item">Vips</div>
+            <div class="topo-item">Chá Bar</div>
+            <div class="topo-item">Cerimônia</div>
+            <div class="topo-item">Lista de presentes</div>
+            <div class="topo-item">Confirme sua presença</div>
+            <div class="topo-item">Recados</div>
+        </div>
+    </div>
+    <div class="row courier-prime-regular-italic">
+        <h2 class="col h2 countdown">Karen <span style="text-shadow: 3px 3px #cac1fe;">&</span> Victor</h2>
+    </div>
+    <div class="row cedarville-cursive-regular">
+        <h1 class="col h1 countdown" id="countdown"></h1>
+        <!-- <br><br><br><br><br><br><br><br><br><br> -->
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9700176035217!2d-46.67431828570555!3d-23.569520284678845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce577d1611a151%3A0xf2cbdb4a7f9cfbfd!2sPra%C3%A7a%20Nossa%20Sra.%20do%20Brasil%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005402-000!5e0!3m2!1spt-BR!2sbr!4v1632897397936!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border: 0px; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""></iframe> -->
+    </div>
+    <div class="row">
+        <h1 class="col h1 countdown">
+            <img src="./flor-title-1.svg" width="100px">
+        </h1>
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 27, 2026 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
 </html>
